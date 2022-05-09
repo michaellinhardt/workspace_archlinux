@@ -1,1 +1,1 @@
-echo "ok"
+alias upddwm='cd ~/srcpkgs/dwm_fork && git pull && sudo make clean install && cd -'
