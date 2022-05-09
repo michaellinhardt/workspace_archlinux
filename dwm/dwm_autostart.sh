@@ -1,3 +1,2 @@
 #!/bin/bash
-/usr/local/bin/st ls
-pause
+/usr/local/bin/st
