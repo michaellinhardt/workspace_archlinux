@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/local/bin/st -- echo "hello"
+/usr/local/bin/st --command="echo 1"
