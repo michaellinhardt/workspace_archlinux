@@ -1,3 +1,3 @@
 #!/bin/bash
 ~/xrandr/1280x720.sh
-/usr/local/bin/st -e ~/workspace_archlinux/dockerosx/local_monterey.sh
+# /usr/local/bin/st -e ~/workspace_archlinux/dockerosx/local_monterey.sh
