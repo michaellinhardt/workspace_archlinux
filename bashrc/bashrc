@@ -1,5 +1,11 @@
 alias updworkspace='cd ~/workspace_archlinux && git pull && source ~/workspace_archlinux/bashrc/bashrc && cd -'
 alias upddwm='cd ~/srcpkgs/dwm_fork && git pull && sudo make clean install && cd -'
 alias updgrub='grub-mkconfig -o /boot/grub/grub.cfg'
+
 alias dockerosx='sh ~/workspace_archlinux/dockerosx/local_monterey.sh'
 alias dockerosx_pull='sh ~/workspace_archlinux/dockerosx/online_monterey.sh'
+
+alias install_base='sh ~/workspace_archlinux/installs/install_base.sh'
+alias install_dockerosx='sh ~/workspace_archlinux/installs/install_dockerosx.sh'
+alias install_dwm='sh ~/workspace_archlinux/installs/install_dwm.sh'
+alias install_teazyou='sh ~/workspace_archlinux/installs/install_teazyou.sh'
