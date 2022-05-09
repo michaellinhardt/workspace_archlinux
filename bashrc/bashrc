@@ -1,2 +1,5 @@
 alias updworkspace='cd ~/workspace_archlinux && git pull && source ~/workspace_archlinux/bashrc/bashrc && cd -'
 alias upddwm='cd ~/srcpkgs/dwm_fork && git pull && sudo make clean install && cd -'
+alias updgrub='grub-mkconfig -o /boot/grub/grub.cfg'
+alias dockerosx='sh ~/workspace_archlinux/dockerosx/local_monterey.sh'
+alias dockerosx_pull='sh ~/workspace_archlinux/dockerosx/online_monterey.sh'
