@@ -1,1 +1,2 @@
+alias updworkspace='cd ~/workspace_archlinux && git pull && source ~/workspace_archlinux/bashrc/bashrc && cd -'
 alias upddwm='cd ~/srcpkgs/dwm_fork && git pull && sudo make clean install && cd -'
