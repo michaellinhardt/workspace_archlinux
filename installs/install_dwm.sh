@@ -26,4 +26,12 @@ if [ ! -d ~/.xinitrc ]; then
 fi
 echo "exec dwm" > ~/.xinitrc
 
+mkdir -p ~/.dwm
+sudo rm -rf ~/.dwm/autostart.sh
+sudo rm -rf ~/.dwm/autostart_blocking.sh
+sudo echo "/bin/bash ~/workspace_archlinux/dwm/dwm_autostart.sh" > ~/.dwm/autostart.sh
+sudo echo "/bin/bash ~/workspace_archlinux/dwm/dwm_autostart_blocking.sh" > ~/.dwm/autostart_blocking.sh
+sudo chmod +x ~/.dwm/autostart.sh
+sudo chmod +x ~/.dwm/autostart_blocking.sh
+
 echo "Done! type startx to run or add startx to .bash_profile"
