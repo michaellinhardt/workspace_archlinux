@@ -1,6 +1,6 @@
-xhost + && docker run
-    --memory 14G
-    --memory-swap 20G
+xhost + && docker run \
+    --memory 14G \
+    --memory-swap 20G \
     -it \
     --device /dev/kvm \
     -p 50922:10022 \
