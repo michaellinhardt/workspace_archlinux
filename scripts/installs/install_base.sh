@@ -12,17 +12,17 @@ sudo locale-gen
 sudo pacman -S base-devel git vim sudo iwd netctl networkmanager grub efibootmgr intel-ucode alsa alsa-plugins alsa-utils htop neofetch man-db man-pages texinfo dhcpcd
 
 # git config
-sudo cp ~/workspace_archlinux/configs/git/gitconfig ~/.gitconfig
+sudo cp /home/teazyou/workspace_archlinux/configs/git/gitconfig /home/teazyou/.gitconfig
 
 # network services
 sudo systemctl enable --now iwd
 sudo systemctl enable --now dhcpcd
 
 # erase service iwd (add delay at startup)
-sudo cp ~/workspace_archlinux/configs/services/iwd.service /usr/lib/systemd/system/iwd.service
+sudo cp /home/teazyou/workspace_archlinux/configs/services/iwd.service /usr/lib/systemd/system/iwd.service
 
 # service to auto login when reboot
-sudo cp ~/workspace_archlinux/configs/services/getty@.service /usr/lib/systemd/system/getty@.service
+sudo cp /home/teazyou/workspace_archlinux/configs/services/getty@.service /usr/lib/systemd/system/getty@.service
 
 echo "Done!"
 echo "-> Need to uncomment group wheel with visudo command"
