@@ -1,0 +1,3 @@
+# THIS REPLACE THE ORIGINAL ~/.bashrc
+
+source /home/teazyou/workspace_archlinux/configs/bashrc/bashrc

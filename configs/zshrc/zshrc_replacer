@@ -1,0 +1,4 @@
+# THIS REPLACE THE ORIGINAL ~/.zshrc
+
+source /home/teazyou/workspace_archlinux/configs/zshrc/zshrc
+

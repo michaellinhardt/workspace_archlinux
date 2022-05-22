@@ -5,6 +5,7 @@ mkdir -p /home/teazyou/srcpkgs
 cd /home/teazyou/srcpkgs
 if [ ! -d /home/teazyou/srcpkgs/st ]; then
    git clone https://git.suckless.org/st
+   sudo chown -R teazyou:teazyou ./st
 fi
 
 cd /home/teazyou/srcpkgs/st
@@ -14,6 +15,7 @@ sudo make clean install
 cd /home/teazyou/srcpkgs
 if [ ! -d /home/teazyou/srcpkgs/dwm_fork ]; then
    git clone https://github.com/michaellinhardt/dwm_fork.git
+   sudo chown -R teazyou:teazyou ./dwm_fork
 fi
 
 cd /home/teazyou/srcpkgs/dwm_fork
