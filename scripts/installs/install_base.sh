@@ -23,7 +23,7 @@ mkdir /home/teazyou/srcpkgs
 mkdir /home/teazyou/dev
 
 # base package
-sudo pacman -S base-devel git curl vim sudo pass xdg-utils tig iwd netc1tl networkmanager grub efibootmgr intel-ucode alsa alsa-plugins alsa-utils htop neofetch man-db man-pages texinfo dhcpcd zsh
+sudo pacman -S base-devel git curl vim sudo pass xdg-utils tig iwd netctl networkmanager grub efibootmgr intel-ucode alsa alsa-plugins alsa-utils htop neofetch man-db man-pages texinfo dhcpcd zsh
 
 # git config
 sudo cp /home/teazyou/workspace_archlinux/configs/git/gitconfig /home/teazyou/.gitconfig
