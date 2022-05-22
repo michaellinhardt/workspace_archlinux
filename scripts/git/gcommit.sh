@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 sh $PATH_WORKSPACE/scripts/git/gsetup.sh
 [[ $? != 0 ]] && exit 1;
