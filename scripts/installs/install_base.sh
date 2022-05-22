@@ -30,7 +30,6 @@ sudo cp /home/teazyou/workspace_archlinux/configs/git/gitconfig /home/teazyou/.g
 
 # oh-my-zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-zsh
 cp /home/teazyou/workspace_archlinux/configs/zshrc/zshrc_replacer /home/teazyou/.zshrc
 source /home/teazyou/.zshrc
 
