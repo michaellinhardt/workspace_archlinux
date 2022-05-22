@@ -1,0 +1,1 @@
+require('/home/teazyou/workspace_archlinux/configs/awesome/bootstrap.lua')

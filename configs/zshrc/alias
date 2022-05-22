@@ -11,4 +11,4 @@ alias dockerosx_pull='sh /home/teazyou/workspace_archlinux/scripts/dockerosx/onl
 alias install_base='sh /home/teazyou/workspace_archlinux/scripts/installs/install_base.sh'
 alias install_dockerosx='sh /home/teazyou/workspace_archlinux/scripts/installs/install_dockerosx.sh'
 alias install_dwm='sh /home/teazyou/workspace_archlinux/scripts/installs/install_dwm.sh'
-alias install_git='sh /home/teazyou/workspace_archlinux/scripts/installs/install_git.sh'
+alias install_awesome='sh /home/teazyou/workspace_archlinux/scripts/installs/install_awesome.sh'
