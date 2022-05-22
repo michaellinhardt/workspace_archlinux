@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sh $PATH_WORKSPACE/sh/git/gsetup.sh
+sh $PATH_WORKSPACE/scripts/git/gsetup.sh
 [[ $? != 0 ]] && exit 1;
-sh $PATH_WORKSPACE/sh/git/gstatus.sh
+sh $PATH_WORKSPACE/scripts/git/gstatus.sh
 [[ $? != 0 ]] && exit 1;
 # si aucune list a push on push tout
 if [ $# -lt 1 ]
