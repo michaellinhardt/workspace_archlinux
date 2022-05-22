@@ -1,11 +1,11 @@
 # EXPORTS
-source ~/workspace/configs/zsh/exports
+source $PATH_WORKSPACE/configs/zsh/exports
 
 # VAR
-source ~/workspace/configs/zsh/variables
+source $PATH_WORKSPACE/configs/zsh/variables
 
 # COLOR
-source ~/workspace/configs/zsh/colors
+source $PATH_WORKSPACE/configs/zsh/colors
 
 # OH MY ZSH
 plugins=(git)
