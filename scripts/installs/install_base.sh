@@ -40,11 +40,9 @@ sudo cp /home/teazyou/workspace_archlinux/configs/services/iwd.service /usr/lib/
 sudo cp /home/teazyou/workspace_archlinux/configs/services/getty@.service /usr/lib/systemd/system/getty@.service
 
 # oh-my-zsh
+cp /home/teazyou/workspace_archlinux/configs/zshrc/zshrc_replacer /home/teazyou/.zshrc
 if [ ! -d /home/teazyou/.oh-my-zsh ]; then
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    cp /home/teazyou/workspace_archlinux/configs/zshrc/zshrc_replacer /home/teazyou/.zshrc
-    zsh
-    source /home/teazyou/.zshrc
 fi
 
 echo "Done!"
@@ -52,3 +50,6 @@ echo "-> Need to uncomment group wheel with visudo command"
 echo "-> edit /etc/default/grub, set GRUB_TIMEOUT=0, rebuild grub config (alias: updgrub)"
 echo "-> added 3sc delay to iwd service at start (prevent start while wifi card not ready)"
 echo "-> added getty file to skip login on computer start"
+
+zsh
+source /home/teazyou/.zshrc
