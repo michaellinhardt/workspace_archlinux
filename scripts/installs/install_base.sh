@@ -1,22 +1,5 @@
 # create user
-sudo useradd -m teazyou
 sudo usermod -aG wheel,audio,video,storage,optical teazyou
-
-# date settings
-sudo ln -sf /usr/share/zoneinfo/Asia/Ho_Chi_Minh /etc/localtime
-sudo timedatectl set-timezone Asia/Ho_Chi_Minh
-sudo timedatectl set-ntp true
-sudo hwclock --systohc
-
-# hostname
-sudo rm -rf /etc/hostname
-sudo echo "archteazyou" >> /etc/hostname
-sudo rm -rf /etc/hosts
-sudo cp /home/teazyou/workspace_archlinux/configs/others/hosts_fresh_install /etc/hosts
-
-# language
-sudo echo en_US.UTF-8 UTF-8 > /etc/locale.gen
-sudo locale-gen
 
 # mkdir folders
 mkdir /home/teazyou/srcpkgs
