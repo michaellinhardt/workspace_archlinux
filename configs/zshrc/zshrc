@@ -1,8 +1,8 @@
+# VAR
+PATH_WORKSPACE=/home/teazyou/workspace_archlinux
+
 # EXPORTS
 source $PATH_WORKSPACE/configs/zshrc/exports
-
-# VAR
-source $PATH_WORKSPACE/configs/zshrc/variables
 
 # COLOR
 source $PATH_WORKSPACE/configs/zshrc/colors
@@ -19,5 +19,6 @@ source /usr/share/nvm/init-nvm.sh
 source $PATH_WORKSPACE/configs/zshrc/alias
 
 # GIT
+MAIL=linhardt.michael@gmail.com
 git config --global core.editor vim
 git config --global user.email "$MAIL"
