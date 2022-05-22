@@ -1,5 +1,5 @@
 # VAR
-PATH_WORKSPACE=/home/teazyou/workspace_archlinux
+export PATH_WORKSPACE=/home/teazyou/workspace_archlinux
 
 # EXPORTS
 source $PATH_WORKSPACE/configs/zshrc/exports

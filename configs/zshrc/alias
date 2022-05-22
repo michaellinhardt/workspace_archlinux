@@ -20,13 +20,13 @@ dkt () { cd ~/dev/dkt/$@ }
 
 # GIT
 alias gad="git add $@"
-alias gst="sh /home/teazyou/workspace_archlinux/scripts/git/gstatus.sh"
-alias gco="sh /home/teazyou/workspace_archlinux/scripts/git/gcommit.sh"
-alias gpu="sh /home/teazyou/workspace_archlinux/scripts/git/gpush.sh"
-alias gacp="sh /home/teazyou/workspace_archlinux/scripts/git/gaddcompush.sh"
+alias gst="sh $PATH_WORKSPACE/scripts/git/gstatus.sh"
+alias gco="sh $PATH_WORKSPACE/scripts/git/gcommit.sh"
+alias gpu="sh $PATH_WORKSPACE/scripts/git/gpush.sh"
+alias gacp="sh $PATH_WORKSPACE/scripts/git/gaddcompush.sh"
 
-alias gdelete="sh /home/teazyou/workspace_archlinux/scripts/git/gdelete.sh"
-alias gcreate="sh /home/teazyou/workspace_archlinux/scripts/git/gcreate.sh"
+alias gdelete="sh $PATH_WORKSPACE/scripts/git/gdelete.sh"
+alias gcreate="sh $PATH_WORKSPACE/scripts/git/gcreate.sh"
 alias gbranch="git remote prune origin && git branch -a"
 alias grebase="git fetch && git rebase && git pull"
 alias gsub="git submodule update --init"
