@@ -28,11 +28,6 @@ sudo pacman -S base-devel git curl vim sudo pass xdg-utils tig iwd netctl networ
 # git config
 sudo cp /home/teazyou/workspace_archlinux/configs/git/gitconfig /home/teazyou/.gitconfig
 
-# oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp /home/teazyou/workspace_archlinux/configs/zshrc/zshrc_replacer /home/teazyou/.zshrc
-source /home/teazyou/.zshrc
-
 #yay yet another yaourt
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git
@@ -60,6 +55,11 @@ sudo cp /home/teazyou/workspace_archlinux/configs/services/iwd.service /usr/lib/
 
 # service to auto login when reboot
 sudo cp /home/teazyou/workspace_archlinux/configs/services/getty@.service /usr/lib/systemd/system/getty@.service
+
+# oh-my-zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cp /home/teazyou/workspace_archlinux/configs/zshrc/zshrc_replacer /home/teazyou/.zshrc
+source /home/teazyou/.zshrc
 
 echo "Done!"
 echo "-> Need to uncomment group wheel with visudo command"
