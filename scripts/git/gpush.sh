@@ -1,7 +1,5 @@
 #!/bin/bash
 
-sh $PATH_WORKSPACE/sh/sys/dstore.sh
-[[ $? != 0 ]] && exit 1;
 sh $PATH_WORKSPACE/sh/git/gsetup.sh
 [[ $? != 0 ]] && exit 1;
 sh $PATH_WORKSPACE/sh/git/gstatus.sh
