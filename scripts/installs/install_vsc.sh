@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 function vscInstallExtension () {
   echo $CW8"code --install-extension $1..."$CWH

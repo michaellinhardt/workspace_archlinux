@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 # Affiche le status et controle le retour, exit si ce nest pas un dossier git
 echo $CW8"git status -s"$CWH
