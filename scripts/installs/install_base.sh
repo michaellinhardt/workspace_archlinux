@@ -6,7 +6,7 @@ mkdir /home/teazyou/srcpkgs
 mkdir /home/teazyou/dev
 
 # base package
-sudo pacman -S base-devel git curl vim sudo pass xdg-utils tig iwd netctl networkmanager grub efibootmgr intel-ucode alsa alsa-plugins alsa-utils htop neofetch man-db man-pages texinfo dhcpcd zsh python ruby npm java-runtime-common java-environment-common mysql
+sudo pacman -S base-devel git curl vim sudo pass xdg-utils tig iwd netctl networkmanager grub efibootmgr intel-ucode alsa alsa-plugins alsa-utils htop neofetch man-db man-pages texinfo dhcpcd zsh python ruby npm java-runtime-common java-environment-common mysql rclone
 
 # git config
 sudo cp /home/teazyou/workspace_archlinux/configs/git/gitconfig /home/teazyou/.gitconfig
@@ -21,7 +21,7 @@ sudo yay -Syu
 yay --save --answerdiff None --answerclean None --removemake
 
 # yay packages
-yay -S franz code spotify firefox google-chrome nvm watchman
+yay -S franz code spotify firefox google-chrome nvm watchman zoom postman nordvpn bitwarden
 
 # git credential manager ( and pass config )
 yay -S git-credential-manager-core-bin
@@ -40,9 +40,12 @@ sudo cp /home/teazyou/workspace_archlinux/configs/services/iwd.service /usr/lib/
 sudo cp /home/teazyou/workspace_archlinux/configs/services/getty@.service /usr/lib/systemd/system/getty@.service
 
 # oh-my-zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp /home/teazyou/workspace_archlinux/configs/zshrc/zshrc_replacer /home/teazyou/.zshrc
-source /home/teazyou/.zshrc
+if [ ! -d /home/teazyou/.oh-my-zsh ]; then
+    sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    cp /home/teazyou/workspace_archlinux/configs/zshrc/zshrc_replacer /home/teazyou/.zshrc
+    zsh
+    source /home/teazyou/.zshrc
+fi
 
 echo "Done!"
 echo "-> Need to uncomment group wheel with visudo command"

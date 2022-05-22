@@ -12,3 +12,4 @@ alias install_base='sh /home/teazyou/workspace_archlinux/scripts/installs/instal
 alias install_dockerosx='sh /home/teazyou/workspace_archlinux/scripts/installs/install_dockerosx.sh'
 alias install_dwm='sh /home/teazyou/workspace_archlinux/scripts/installs/install_dwm.sh'
 alias install_awesome='sh /home/teazyou/workspace_archlinux/scripts/installs/install_awesome.sh'
+alias install_vsc='sh /home/teazyou/workspace_archlinux/scripts/installs/install_awesome.sh'
