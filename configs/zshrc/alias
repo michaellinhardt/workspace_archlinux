@@ -30,3 +30,5 @@ alias gcreate="sh $PATH_WORKSPACE/scripts/git/gcreate.sh"
 alias gbranch="git remote prune origin && git branch -a"
 alias grebase="git fetch && git rebase && git pull"
 alias gsub="git submodule update --init"
+
+alias startx_awesome="cp $PATH_WORKSPACE/configs/xinitrc/xinitrc_awesome /home/teazyou/.xinitrc && startx"
