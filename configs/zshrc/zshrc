@@ -1,13 +1,23 @@
-export ZSH="/home/teazyou/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
+# EXPORTS
+source ~/workspace/config/zsh/exports
 
+# VAR
+source ~/workspace/config/zsh/variables
+
+# COLOR
+source ~/workspace/config/zsh/colors
+
+# OH MY ZSH
 plugins=(git)
+ZSH_THEME="gallois"
 source $ZSH/oh-my-zsh.sh
 
-PATH_WORKSPACE=/home/teazyou/workspace_archlinux
-
-export GCM_CREDENTIAL_STORE=gpg
-
+# NVM
 source /usr/share/nvm/init-nvm.sh
 
+# ALIAS
 source $PATH_WORKSPACE/configs/zshrc/alias
+
+# GIT
+git config --global core.editor vim
+git config --global user.email "$MAIL"
