@@ -1,10 +1,10 @@
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="/home/teazyou/.oh-my-zsh"
 ZSH_THEME="robbyrussell"
 
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
-PATH_WORKSPACE=$HOME/workspace_archlinux
+PATH_WORKSPACE=/home/teazyou/workspace_archlinux
 
 export GCM_CREDENTIAL_STORE=gpg
 
