@@ -4,7 +4,7 @@ mkdir -p ~/srcpkgs
 
 cd ~/srcpkgs
 if [ ! -d ~/srcpkgs/st ]; then
-   git clone git clone https://git.suckless.org/st
+   git clone https://git.suckless.org/st
 fi
 
 cd ~/srcpkgs/st
@@ -29,8 +29,8 @@ echo "exec dwm" > ~/.xinitrc
 mkdir -p ~/.dwm
 sudo rm -rf ~/.dwm/autostart.sh
 sudo rm -rf ~/.dwm/autostart_blocking.sh
-sudo echo "/bin/bash ~/workspace_archlinux/dwm/dwm_autostart.sh" > ~/.dwm/autostart.sh
-sudo echo "/bin/bash ~/workspace_archlinux/dwm/dwm_autostart_blocking.sh" > ~/.dwm/autostart_blocking.sh
+sudo echo "/bin/bash ~/workspace_archlinux/scripts/dwm/dwm_autostart.sh" > ~/.dwm/autostart.sh
+sudo echo "/bin/bash ~/workspace_archlinux/scripts/dwm/dwm_autostart_blocking.sh" > ~/.dwm/autostart_blocking.sh
 sudo chmod +x ~/.dwm/autostart.sh
 sudo chmod +x ~/.dwm/autostart_blocking.sh
 
