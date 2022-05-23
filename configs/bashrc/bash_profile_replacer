@@ -1,0 +1,3 @@
+# THIS REPLACE THE ORIGINAL ~/.bash_profile
+
+source /home/teazyou/workspace_archlinux/configs/bashrc/bash_profile

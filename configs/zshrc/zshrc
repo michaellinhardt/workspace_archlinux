@@ -22,3 +22,7 @@ source $PATH_WORKSPACE/configs/zshrc/alias
 MAIL=linhardt.michael@gmail.com
 git config --global core.editor vim
 git config --global user.email "$MAIL"
+
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]]; then
+    startx
+fi
